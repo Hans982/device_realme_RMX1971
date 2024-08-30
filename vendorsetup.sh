@@ -17,4 +17,4 @@ git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/
 
 # Trying Signed Build
 rm -rf vendor/lineage-priv
-git clone https://github.com/Tiktodz/vendor -b matrixx vlp && cp -R vlp/* vendor/ && rm -rf vlp
+git clone https://github.com/ardia-kun/vendor -b 14 vlp && cp -R vlp/* vendor/ && rm -rf vlp
