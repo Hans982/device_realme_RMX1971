@@ -12,6 +12,35 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Device Specific Flags
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Environment Flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+TARGET_ENABLE_BLUR := false
+TARGET_HAS_UDFPS := false
+
+# Gapps
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+
+# Matrixx flags
+MATRIXX_BUILD_TYPE := COMMUNITY
+MATRIXX_CHIPSET := SDM710
+MATRIXX_BATTERY := 4050 mAh
+MATRIXX_DISPLAY := 1080x2340
+MATRIXX_MAINTAINER := Hans@MinoritySquad
+
+# Matrixx Gapps
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+WITH_GMS := false
+
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
