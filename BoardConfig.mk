@@ -67,6 +67,9 @@ AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
+# Camera
+TARGET_USES_YCRCB_CAMERA_ENCODE := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 TARGET_HAS_HDR_DISPLAY := true
@@ -160,6 +163,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_M4DEFS += \
