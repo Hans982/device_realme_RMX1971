@@ -62,3 +62,6 @@ BUILD_FINGERPRINT := realme/RMX1971/RMX1971:11/RKQ1.201217.002/1623376276806:use
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+#Sign-key
+include vendor/lineage-priv/keys/keys.mk
