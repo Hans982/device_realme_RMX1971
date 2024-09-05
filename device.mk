@@ -450,6 +450,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # SystemUI
 EXCLUDE_SYSTEMUI_TESTS := true
 
+#Sign-key
+include vendor/lineage-priv/keys/keys.mk
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
