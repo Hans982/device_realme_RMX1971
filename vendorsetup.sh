@@ -18,3 +18,4 @@ git clone https://github.com/ardia-kun/vendor -b 14 vlp && cp -R vlp/* vendor/ &
 cd frameworks/base
 git fetch https://github.com/kaderbava/frameworks_base_derp 14
 curl https://github.com/kaderbava/frameworks_base_derp/commit/edb273acb489cbe9abffd5fcab2ba764ac1a6c02.patch | git am
+cd ../..
