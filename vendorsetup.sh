@@ -13,3 +13,8 @@ git clone --depth=1 https://github.com/kdrag0n/proton-clang.git prebuilts/clang/
 # Trying Signed Build
 rm -rf vendor/lineage-priv
 git clone https://github.com/ardia-kun/vendor -b 14 vlp && cp -R vlp/* vendor/ && rm -rf vlp
+
+# Fix bug mic
+cd frameworks/base
+git fetch https://github.com/kaderbava/frameworks_base_derp 14
+curl https://github.com/kaderbava/frameworks_base_derp/commit/edb273acb489cbe9abffd5fcab2ba764ac1a6c02.patch | git am
