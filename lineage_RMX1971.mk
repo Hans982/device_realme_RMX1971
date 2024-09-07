@@ -11,6 +11,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+SAKURA_MAINTAINER := Hans@MinoritySquad
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
