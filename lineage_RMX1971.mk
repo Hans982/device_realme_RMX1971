@@ -11,8 +11,21 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-SAKURA_MAINTAINER := Hans@MinoritySquad
+# Device Specific Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Matrixx flags
+MATRIXX_CHIPSET := SDM710
+MATRIXX_BATTERY := 4050 mAh
+MATRIXX_DISPLAY := 1080x2340
+MATRIXX_MAINTAINER := Hans@MinoritySquad
+
+# Matrixx Gapps
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+WITH_GMS := false
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
