@@ -14,17 +14,23 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Device Specific Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Matrixx flags
-MATRIXX_CHIPSET := SDM710
-MATRIXX_BATTERY := 4050mAh
-MATRIXX_DISPLAY := 1080x2340
-MATRIXX_MAINTAINER := Hans@MinoritySquad
+# Device config
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := false
+TARGET_EXCLUDES_AUDIOFX := true
 
-# Matrixx Gapps
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
-WITH_GMS := false
+# TARGET_BUILD_PACKAGE options:= 1
+
+TARGET_BUILD_PACKAGE := 2
+
+# TARGET_LAUNCHER options:= 1
+
+# Maintainer
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := Hans@MinoritySquad
+
+# Debugging
+TARGET_INCLUDE_MATLOG := true
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
