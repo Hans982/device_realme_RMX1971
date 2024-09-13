@@ -23,7 +23,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # TARGET_BUILD_PACKAGE options:= 1
 
-
 # TARGET_LAUNCHER options:= 1
 
 # Debugging
