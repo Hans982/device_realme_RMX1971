@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_RMX1971.mk
+
+COMMON_LUNCH_CHOICES := \
+   lineage-RMX1971-ap2a-eng \
+   lineage-RMX1971-ap2a-user \
+   lineage-RMX1971-ap2a-userdebug
