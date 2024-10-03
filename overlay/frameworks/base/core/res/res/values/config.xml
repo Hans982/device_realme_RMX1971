@@ -1151,9 +1151,6 @@
     <!-- Specifies the maximum burn-in offset vertically. -->
     <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
 
-    <!-- Whether the device supports Smart Pixels -->
-    <bool name="config_supportSmartPixels">true</bool>
-
     <!-- SystemInfo Sys Nodes -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
@@ -1231,9 +1228,6 @@
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
     <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
 
@@ -1310,16 +1304,6 @@
          manually by the user. Off by default, since the expected haptic feedback may not be
          available on some devices. -->
     <bool name="config_enableHapticTextHandle">true</bool>
-
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
-
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
-
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up. The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
 
     <!-- Package that contains udfps animation customization or empty to disable -->
     <string name="config_udfps_animation_customization_package"></string>

@@ -67,10 +67,14 @@ AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
+# Camera
+TARGET_USES_YCRCB_CAMERA_ENCODE := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
+TARGET_DISABLED_UBWC := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -98,9 +102,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_RMX1971
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/mmi_charging_enable
-
-# LMKD
-TARGET_LMKD_STATS_LOG := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -162,6 +163,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/derp/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_SEPOLICY_M4DEFS += \
