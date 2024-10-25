@@ -14,31 +14,15 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Whether you are compiling being an OFFICIAL Maintainer:
+# Infinity-X Specific Flags
 INFINITY_BUILD_TYPE := UNOFFICIAL
-
-# Maintainer Name
 INFINITY_MAINTAINER := Realmemynuts
-
-# Whether the package includes System BLURS
 TARGET_SUPPORTS_BLUR := false
-
-# Whether the device supports UDFPS (FOD)
 TARGET_HAS_UDFPS := false
-
-# Whether the compiled package ships Google Apps:
 WITH_GAPPS := false
-
-# Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
 TARGET_BUILD_GOOGLE_TELEPHONY := true
-
-# Whether the device supports screen off touchgestures:
 TARGET_SUPPORTS_TOUCHGESTURES := true
-
-# Whether the compiled package ships ViMusic
 TARGET_BUILD_VIMUSIC := true
-
-# Whether the compiled package ships Moto Calculator irrespective VANILLA or GAPPS:
 USE_MOTO_CALCULATOR := false
 
 PRODUCT_BRAND := realme
