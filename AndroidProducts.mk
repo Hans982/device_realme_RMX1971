@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX1971.mk
+    $(LOCAL_DIR)/infinity_RMX1971.mk
 
 COMMON_LUNCH_CHOICES := \
-   lineage_RMX1971-ap2a-eng \
-   lineage_RMX1971-ap2a-user \
-   lineage_RMX1971-ap2a-userdebug
+   infinity_RMX1971-ap2a-eng \
+   infinity_RMX1971-ap2a-user \
+   infinity_RMX1971-ap2a-userdebug
