@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
+    libcamera_metadata_shim \
     libdng_sdk.vendor \
     libstdc++_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
@@ -361,8 +362,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -518,6 +518,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
+
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    firmware_wlan_mac.bin_symlink
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
