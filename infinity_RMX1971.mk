@@ -8,13 +8,14 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
-INFINITY_MAINTAINER := KaderBava
+INFINITY_MAINTAINER := Hans982
+WITH_GAPPS := false
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := realme
+PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
 PRODUCT_NAME := infinity_RMX1971
