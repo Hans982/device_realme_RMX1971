@@ -15,7 +15,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Realme
+PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
 PRODUCT_NAME := infinity_RMX1971
