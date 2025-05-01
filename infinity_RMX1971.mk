@@ -4,12 +4,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ALLOW_MISSING_DEPENDENCIES := true
+TARGET_DISABLE_EPPE := true
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Inherit some common Infinity-X stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_HAS_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_BLUR := false
+INFINITY_BUILD_TYPE := UNOFFICIAL
 INFINITY_MAINTAINER := Hans982
 WITH_GAPPS := false
+USE_MOTO_CALCULATOR := true
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
