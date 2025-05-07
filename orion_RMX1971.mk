@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ALLOW_MISSING_DEPENDENCIES := true
+TARGET_DISABLE_EPPE := true
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Inherit some common LineageOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -13,12 +18,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 ORION_MAINTAINER := Hans982
-ORION_MAINTAINER_LINK := www.github.com/Hans982
+ORION_MAINTAINER_LINK := https://github.com/Hans982
 ORION_BUILD_TYPE := UNOFFICIAL
 ORION_GAPPS := false
 TARGET_ENABLE_BLUR := false
-TARGET_HAS_UDFPS :=  false
-
+TARGET_HAS_UDFPS := false
 BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
 BUILD_GOOGLE_MESSAGE := true
