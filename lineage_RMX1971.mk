@@ -17,20 +17,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-ORION_MAINTAINER := Hans982
-ORION_MAINTAINER_LINK := https://github.com/Hans982
-ORION_BUILD_TYPE := UNOFFICIAL
-ORION_GAPPS := false
-TARGET_ENABLE_BLUR := false
+# BLKI FLAGS
+WITH_GMS := false
 TARGET_HAS_UDFPS := false
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
+TARGET_ENABLE_BLUR := false
+BLACKIRON_BUILDTYPE := UNOFFICIAL
+BLACKIRON_MAINTAINER := Hans982 (@taltalasuka)
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := orion_RMX1971
+PRODUCT_NAME := lineage_RMX1971
 PRODUCT_MODEL := RMX1971
 
 PRODUCT_SYSTEM_NAME := RMX1971
