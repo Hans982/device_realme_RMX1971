@@ -38,7 +38,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1971
+PRODUCT_NAME := alpha_RMX1971
 PRODUCT_MODEL := RMX1971
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
