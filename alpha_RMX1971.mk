@@ -35,7 +35,7 @@ ALPHA_MAINTAINER := Envoy From The Silence
 
 # Inherit some common Alphadroid stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
