@@ -4,16 +4,36 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common DerpFest stuff
+# Device config
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := false
+TARGET_EXCLUDES_AUDIOFX := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Build config
+# TARGET_BUILD_PACKAGE options:
+TARGET_BUILD_PACKAGE := 1
+
+# Launcher
+TARGET_INCLUDE_LAWNCHAIR := false
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+WITH_ADB_INSECURE := true
+
+# Extras
+TARGET_INCLUDE_RIMUSIC := true
+
+# Maintainer
+ALPHA_BUILD_TYPE := Unofficial
+ALPHA_MAINTAINER := Envoy From The Silence
+
+# Inherit some common Alphadroid stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-# Official-ify
-DERPFEST_BUILD_TYPE := Official
-DERPFEST_BUILD_VARIANT := Stable
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
