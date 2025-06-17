@@ -11,6 +11,15 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+TARGET_ENABLE_BLUR := false
+
+# Some Build Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+BLISS_BUILDTYPE := UNOFFICIAL
+TARGET_STOCK_GAPPS := false
+
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
